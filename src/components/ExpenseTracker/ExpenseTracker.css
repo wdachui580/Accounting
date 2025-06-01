@@ -1,0 +1,56 @@
+/* ExpenseTracker组件的样式 */
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* 输入框样式 */
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+/* 按钮悬停效果 */
+button:hover {
+  transform: translateY(-1px);
+  transition: transform 0.2s;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* 卡片悬停效果 */
+.bg-white\/60:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: background-color 0.3s;
+}
+
+/* 动画效果 */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* 响应式调整 */
+@media (max-width: 640px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
